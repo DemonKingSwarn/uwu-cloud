@@ -24,7 +24,7 @@ jobs:
       - name: Connect to activated SSH gateway
         uses: alexellis/actuated-ssh-gateway-action@master
         with:
-          gatewayaddr: ${{ secrets.SSH_GATEWAY_IP }}
+          gateway: 139.162.243.207
           secure: true
       - name: Setup a blocking tmux session
         uses: alexellis/block-with-tmux-action@master
