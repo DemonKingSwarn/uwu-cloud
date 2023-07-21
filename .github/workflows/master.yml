@@ -26,9 +26,7 @@ jobs:
           #with:
           #gateway: 139.162.243.207
           #secure: true
-      - name: install tmate
-        run: |
-          sudo apt install tmate -y
-          TERM=st-256color tmate
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Setup a blocking tmux session
         uses: alexellis/block-with-tmux-action@master
