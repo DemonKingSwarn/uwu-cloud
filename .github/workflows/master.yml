@@ -29,6 +29,6 @@ jobs:
       - name: install tmate
         run: |
           sudo apt install tmate -y
-          tmate
+          TERM=st-256color tmate
       - name: Setup a blocking tmux session
         uses: alexellis/block-with-tmux-action@master
