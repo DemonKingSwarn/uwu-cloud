@@ -19,14 +19,5 @@ jobs:
     name: connect
     runs-on: ubuntu-latest
     steps:
-      - name: Setup SSH server for Actor
-        uses: alexellis/setup-sshd-actor@master
-          #- name: Connect to activated SSH gateway
-          #uses: alexellis/actuated-ssh-gateway-action@master
-          #with:
-          #gateway: 139.162.243.207
-          #secure: true
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-      - name: Setup a blocking tmux session
-        uses: alexellis/block-with-tmux-action@master
